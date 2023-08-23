@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivek - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-color: rgb(45, 87, 125);
+            color: rgb(255, 255, 255);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(0, 0, 0);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: brown;
+            font-size: 1.05rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+        }
+
+        .firstSection>div {
+            width: 50%;
+        }
+
+        .leftSection {
+            /* background-color: aliceblue; */
+            font-size: 2rem;
+
+        }
+
+        .leftSection>h3 {
+            margin-top: 0;
+            margin-left: 100px;
+        }
+
+        .leftSection .btn {
+            padding: 50px 0;
+            margin-top: 50px;
+            margin-left: 12px;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .leftSection .btn:hover {
+            color: rgb(119, 178, 206);
+            font-size: 1.05rem;
+        }
+
+        .rightSection img {
+            width: 100%;
+            margin: auto;
+        }
+
+        .purple {
+            color: blueviolet;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element1 {
+            color: blueviolet;
+        }
+
+        .more-about>h2 {
+            text-align: center;
+            font-size: 50px;
+        }
+
+        .more-about {
+            font-size: 20px;
+            font-style: normal;
+
+        }
+
+        .skills {
+            max-width: 50rem;
+            margin: auto;
+            text-align: center;
+            margin-top: 5rem;
+        }
+
+        .skill-header {
+            font-size: 50px;
+            margin-bottom: 1rem;
+        }
+
+        .skills-wrapper img {
+            padding: 0.1rem;
+        }
+
+        .icon {
+            width: 10.875rem;
+            height: 10rem;
+        }
+
+        .contact {
+            margin-top: 2rem;
+        }
+
+        .contact h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer-fourth img {
+            width: 25px;
+            position: relative;
+            top: 5px;
+            left: 9px;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        footer .footer-rights {
+
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+
+        }
+
+        .contact {
+            margin-top: 2rem;
+        }
+
+        .contact h2 {
+            font-size: 35px;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        .contact-form {
+            text-align: left;
+            box-shadow: 1px 1pxpx 1px #ffffff;
+        }
+
+        .contact-form-container {
+            max-width: 40.75rem;
+            margin: 0 auto;
+            /* margin-top: 50px; */
+            margin-bottom: 50px;
+            padding: 0.938rem;
+            border-radius: 5px;
+            box-shadow: 0 3px 10px #ffffff;
+        }
+
+        .contact-form-container label {
+            line-height: 2.7em;
+            font-weight: 700;
+            color: #ffffff;
+        }
+
+        .contact-form-container textarea {
+            min-height: 6.25rem;
+            font-size: 14px;
+        }
+
+        .contact-form-container .input-field {
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+            border: 2px outset #ffffff;
+            font-size: 0.875rem;
+            outline: none;
+        }
+
+        .input-field::placeholder {
+            padding: 0.5rem;
+            color: #424242;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            background-color: #ffffff;
+            border: 2px solid #01020e;
+            border-radius: 5px;
+            font-size: 1rem;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: rgb(210, 227, 254);
+            border: 2px solid #000000;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Vivek's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#more-about">About</a></li>
+                    <li><a>Services</a></li>
+                    <li><a href="https://github.com/sherwalvivek">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <h3>Hello! This is my personal Portfolio development website.</h3>
+                <hr>
+                <h3>About Me </h3>
+                <div>My name is Vivek Sherwal
+                    and I am a </div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn"
+                        onclick="document.location='https://www.w3schools.com/html/html_links.asp'">Download
+                        Resume</button>
+                    <button class="btn" onclick="document.location='https://www.linkedin.com'">Visit Linkedin</button>
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="dev.png" alt="">
+            </div>
+        </section>
+        <hr>
+        </section>
+
+        <section class="more-about" id="more-about">
+            <h2>More About Me</h2>
+            <p>
+                Hello! This is my personal Portfolio development website. My name is Vivek Sherwal.
+            </p>
+            <p>Enthusiastic and dedicated final year student pursuing a B.E in Computer Science Engineering at UIET,
+                Panjab University SSG Regional Centre Hoshiarpur. Proficient in C++, Data Structures and Algorithms
+                (DSA), Object-Oriented Programming (OOPs), MySQL, HTML, CSS, and JavaScript.A fast learner with a strong
+                foundation in programming concepts and problem-solving skills. Committed to delivering high-quality
+                software solutions and continuously enhancing technical proficiency. Eager to contribute to a dynamic
+                team and make a positive impact in the field of software development.</p>
+            <p>
+                <br>
+                <b>Contact </b>
+                <br>
+                Phone Number: +917409713629<br>
+                Email: viveksherwal243200@gmail.com<br>
+                linkedin: www.linkedin.com/in/vivek-sherwal-526772167<br>
+                GitHub: https://github.com/sherwalvivek
+            </p>
+            <section class="skills" id="skills">
+                <h2 class="skill-header">My Top Skills</h2>
+
+                <div class="skills-wrapper">
+                    <div class="first-set animate__animated animate__pulse">
+                        <img src="https://seeklogo.com/images/C/c-logo-1B1817C041-seeklogo.com.png" alt=""
+                            loading="lazy" class="icon icon-card" />
+                        <img src="https://miro.medium.com/max/1200/0*7AHKqhGVaDWZJ1L_.png" alt="" loading="lazy"
+                            class="icon icon-card" />
+                        <img src="https://4.bp.blogspot.com/-K3xPJlyU5mk/XGfNIFz6yyI/AAAAAAAAR80/A4JTnhu4ilUdnQ3TgtgE414oRw55owL8QCLcBGAs/s1600/HTML%2B5.png"
+                            alt="" loading="lazy" class="icon icon-card" />
+                        <img src="https://1000marcas.net/wp-content/uploads/2021/02/CSS-Logo.png" alt="CSS png"
+                            loading="lazy" class="icon icon-card" />
+                        <img src="https://1000logos.net/wp-content/uploads/2020/09/JavaScript-Logo-640x400.png" alt=""
+                            loading="lazy" class="icon icon-card" />
+                        <img src="https://www.prchecker.info/free-icons/128x128/mysql_128_px.png" alt="" loading="lazy"
+                            class="icon icon-card" />
+                    </div>
+                </div>
+                <section class="contact" id="contact">
+                    <h2>Get In Touch With Me</h2>
+                    <div class="contact-form-container">
+                        <div class="contact-form">
+                            <form action="https://formspree.io/f/xyylngw" method="POST">
+                                <div class="form-control">
+                                    <label for="name">Name</label>
+                                    <input type="text" id="name" name="sender-name" placeholder="Enter Your Name"
+                                        class="input-field" required />
+                                </div>
+                                <div class="form-control">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="sender-email" placeholder="Enter Your Email"
+                                        class="input-field" required />
+                                </div>
+                                <div class="form-control">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" cols="60" rows="10" placeholder="Enter Your Message"
+                                        name="message" class="input-field" required></textarea>
+                                </div>
+                                <input type="submit" value="Submit" id="submit-btn" class="submit-btn" />
+                            </form>
+                        </div>
+                    </div>
+                </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Vivek's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>About</li>
+                    <li>Personal</li>
+                    <li>Portfolio</li>
+                    <li>Website</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Contact</li>
+                    <li>Gmail</li>
+                    <li>Linkedin</li>
+                    <li>GitHub</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Follow Us</li>
+                    <li><a href="https://www.gmail.com"> <img
+                                src="https://www.pngitem.com/pimgs/m/26-260052_gmail-logo-png-gmail-vector-logo-png-transparent.png">
+                        </a></li>
+                    <li><a href="https://www.linkedin.com/in/vivek-sherwal-526772167/"> <img
+                                src="https://th.bing.com/th/id/OIP.KY4psHiSxJofuB2hpUuy7AAAAA?pid=ImgDet&rs=1"></a></li>
+                    <li><a href="https://www.github.com/sherwalvivek"> <img
+                                src="https://logowik.com/content/uploads/images/github9775.jpg"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; www.viveksportfolio.com | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Software Engineer', 'Software Engineer And Frontend Web Developer.'],
+            typeSpeed: 25,
+        });
+    </script>
+</body>
+
+</html>
